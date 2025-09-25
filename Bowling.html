@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bowl Space</title>
+  <meta name="description" content="Historia de nuestra empresa de bowling, información de contacto y formulario de reservas." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <img src="Logo.png" alt="Logo Bowl Space" class="logo-img">
+    <div class="tag">Donde la diversión rueda con vos.</div>
+  </div>
+</header>
+
+  <main>
+    <section class="about" aria-labelledby="historia">
+      <h2 id="Presentacion">¿Quiénes somos?</h2>
+      <p>Bowl Space es el nuevo punto de encuentro en Mercedes, Soriano, donde el entretenimiento, la diversión y la buena onda se mezclan para ofrecer una experiencia única de bowling en la ciudad. 
+        Nacimos con la idea de brindar un espacio moderno, cómodo y accesible para que adolescentes y adultos puedan disfrutar de un buen rato entre amigos, familia o compañeros de trabajo.</p>
+      <h2 id="Presentacion">¿Qué ofrecemos?</h2> 
+      <p>En Bowl Space brindamos una propuesta única de entretenimiento en la ciudad de Mercedes, Soriano, centrada en el juego de bowling como experiencia social y recreativa.
+        Nuestra oferta combina tecnología, comodidad y diversión en un ambiente moderno, accesible y pensado para todas las edades. Nos enfocamos en crear un espacio que no solo invite a jugar, sino también a compartir momentos inolvidables.</p>
+    </section>
+
+
+    <section class="about" aria-labelledby="historia">
+      <h2 id="Presentacion">Precios</h2>
+        <table>
+        <tr>
+          <td>Partidas desde: <br>$300</td>
+          <td>Lunes a jueves: <br>$300 </td>
+          <td>Después de las 20Hs: <br>330$</td>
+          <td>Viernes y Sábados: <br>$350</td>
+          <td>Después de las 21HS: <br>$390</td>
+          <td>Domingos y feriados: <br>$390</td>
+        </tr>
+        </table>
+    </section>
+
+<section class="contact" aria-labelledby="contacto">
+      <h2 id="contacto">Información de Contacto</h2>
+      <ul>
+        <li><strong>Ubicación:</strong> Lavalleja 684, Mercedes, Soriano</li>
+        <li><strong>Email:</strong> Administracion@BowlSpace.com.uy</li>
+        <li><strong>Teléfono:</strong> +598 9XX XXX XX</li>
+        <!-- <li><strong>Redes sociales:</strong> 
+        <a href="#">Facebook</a> · <a href="#">Instagram</a> · <a href="#">Twitter</a> -->
+        </li>
+      </ul>
+    </section>
+
+    <section class="reservation" aria-labelledby="reserva">
+      <h2 id="reserva">Reserva tu lugar</h2>
+      <p>Completa el siguiente formulario para reservar una pista en la fecha y hora que prefieras.</p>
+      <form id="form-reserva" onsubmit="event.preventDefault();alert('Reserva Realizada con éxito');">
+        <label for="name">Nombre completo</label>
+        <input id="name" type="text" required>
+
+        <label for="phone">Teléfono</label>
+        <input id="phone" type="phone" required>
+
+        <label for="date">Fecha</label>
+        <input id="date" type="date" required>
+
+        <label for="time">Hora</label>
+        <input id="time" type="time" required>
+
+        <label for="players">Cantidad de jugadores</label>
+        <input id="players" type="number" min="1" max="12" value="2" required>
+
+        <button type="submit" class="btn">Reservar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p class="muted">Bowl Space — Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
