@@ -12,6 +12,21 @@
   box-sizing: border-box;
 }
 
+
+.abou tr{
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (max-width:777px) {
+  .abou{
+    overflow-x: scroll;
+    scrollbar-color:var(--accent-light)#0f0f1a ;
+  }
+}
+body::-webkit-scrollbar-track{
+  background-color: #0404f6;
+}
 th, td {
   border: 3px solid var(--accent);
   border-radius: 10px;
@@ -74,7 +89,7 @@ header {
 }
 
 main {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 30px 20px;
 }
