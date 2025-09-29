@@ -67,11 +67,14 @@
     <!-- <input type="hidden" name="_captcha" value="false"> -->
     <input type="hidden" name="_template" value="table">
 
+
     <label for="name">Nombre completo</label>
     <input id="name" name="nombre" type="text" placeholder="Nombre (no apodo)" required>
 
+
     <label for="phone">Teléfono</label>
     <input id="phone" name="telefono" type="tel" placeholder="Sin prefijo" required>
+
 
     <label for="date">Fecha</label>
     <input id="date" name="fecha" type="date" required>
@@ -90,16 +93,31 @@
       });
     </script>
 
+
     <label for="time">Hora</label>
     <!-- <input id="time" name="hora" type="time" required> -->
 
-  <input id="time" name="time" type="time" required min="13:00" max="23:59" step="3600">
-  <small style="color: #888;">Selecciona una hora entre las 13:00 y las 23:00</small>
+
+    <select name="time" id="time" required>
+      <option value="" disabled selected hidden>Elige una opción</option>
+      <option value="Reserva De las 13hs a 14hs">13:00 a 14:00</option>
+      <option value="Reserva De las 14hs a 15hs">14:00 a 15:00</option>
+      <option value="Reserva De las 15hs a 16hs">15:00 a 16:00</option>
+      <option value="Reserva De las 16hs a 17hs">16:00 a 17:00</option>
+      <option value="Reserva De las 17hs a 18hs">17:00 a 18:00</option>
+      <option value="Reserva De las 18hs a 19hs">18:00 a 19:00</option>
+      <option value="Reserva De las 19hs a 20hs">19:00 a 20:00</option>
+      <option value="Reserva De las 20hs a 21hs">20:00 a 21:00</option>
+      <option value="Reserva De las 21hs a 22hs">21:00 a 22:00</option>
+      <option value="Reserva De las 22hs a 23hs">22:00 a 23:00</option>
+      <option value="Reserva De las 23hs a 24hs">23:00 a 00:00</option>      
     </select>
+
 
     <label for="players">Cantidad de jugadores</label>
     <input id="players" name="jugadores" type="number" min="1" max="12" value="2" placeholder="Entre 1 a 12 personas" required>
 
+    
     <button type="submit" class="btn">Reservar</button>
 </form>
 
